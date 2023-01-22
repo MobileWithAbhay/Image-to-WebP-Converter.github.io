@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <div class="from">
+  <h1>Image to WebP Converter</h1>
+  <div class="hidden1">
+    <input type="file" multiple accept="image/*" id="upload-button">
+    <label for="upload-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none" viewBox="0 0 24 20" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+         </svg>
+          &nbsp;Choose A Photo
+    </label>
+  </div>
+    <div class="upload-box">
+      <div id="previews"></div>
+    </div>
+    <div class="hidden2">
+       <input type="text" class="link" hidden>
+        <button class="btn" onclick="download()">Download WebP</button>
+        <button id="clearAllBtn" class="btn" onclick="Clear()">Clear</button>
+   </div>
+</div>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
